@@ -7,6 +7,10 @@
     font-family: Arvo;
     src: url(fonts/Arvo-Regular.ttf) format("truetype");
 }
+@font-face {
+    font-family: Arvo Bold;
+    src: url(fonts/Arvo-Bold.ttf) format("truetype");
+}
 
 * {
     margin: 0;
@@ -23,6 +27,9 @@ ul>li {
     grid-template-rows: 1fr 5fr;
     height: 100vh;
 }
+
+
+/* Sidebar settings */ 
 
 #sidebar {
     background-color: rgb(42, 75, 42);
@@ -50,10 +57,83 @@ ul>li {
     align-items: center;
 }
 
+
+/* Header settings */
+
 #header {
     background-color: rgb(245, 235, 222);
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem;
+    gap: 4px;
+    border-bottom: 1px solid rgb(105, 23, 23);
 }
+
+.search {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+}
+
+input {
+    border: 2px solid rgb(182, 181, 181);
+    border-radius: 10px;
+    padding: 2px;
+}
+
+input:focus {
+    outline: 2px solid rgb(250, 185, 110);
+}
+
+.profile-header {
+    font-weight: 900;
+    color:brown;
+    display: grid;
+    grid-auto-flow: column;
+    justify-self: end;
+    align-self: center;
+    gap: 5px;
+}
+
+.header-row2 {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 3fr 2fr;
+}
+
+.small-text {
+    font-size: 0.8rem;
+}
+
+.user-name2 {
+    font-family: Arvo Bold;
+    font-size: 1.3rem;
+}
+
+.action-buttons {
+    justify-self: end;
+}
+
+.action-buttons button {
+    text-decoration: none;
+    font-family: Arvo, serif;
+    padding: 8px 14px;
+    margin: 4px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(78, 48, 48);
+    color: rgb(248, 240, 215);
+}
+
+.action-buttons button:hover {
+    cursor: pointer;
+    filter: brightness(2);
+}
+
+
+/* Main content settings */
 
 #main-content {
     background-color: rgb(190, 181, 170);
