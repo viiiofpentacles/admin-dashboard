@@ -53,15 +53,25 @@ ul>li {
 .menu-2>ul {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    gap: 15px 0px;
+    gap: 10px 0px;
     align-items: center;
+}
+
+li {
+    padding: 4px;
+}
+
+li:hover {
+    background-color: rgb(53, 80, 53);
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 
 /* Header settings */
 
 #header {
-    background-color: rgb(247, 242, 236);
+    background-color: rgb(255, 252, 248);
     grid-column: 2 / 3;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -220,6 +230,7 @@ input:focus {
     border-radius: 8px;
     padding: 1.5rem;
     gap: 1rem;
+    
 }
 
 .description {
